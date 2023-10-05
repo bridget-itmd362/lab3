@@ -204,7 +204,44 @@ label {
 /* baseline grid and typographic (modular) scale*/
 
 /* ===== LAYOUT STYLES ====== */
+body{
+  background-color: #CCC8AA;
+  border: solid #F1EFEF;
+  border-width: thick;
+}
+input{
+  border-radius: 25px;
+}
+
+@media (min-width: 451px) {
+  body{
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+  }
+}
+
+
 /*design a mobile-scale form that uses only shades of gray (no solid borders) for the input regions. 
 Favor an open design with plenty of padding and white space.*/
+
+@media (min-width: 300px) and (max-width: 450px) {
+  input[type="email"] {
+    background-color: grey;
+    border-style: hidden;
+    padding: 10px 10px;
+  }
+  input[type="checkbox"] {
+    background-color: grey;
+    border-style: hidden;
+  }
+  input[type="submit"] {
+    background-color: lightgrey;
+    border-style: hidden;
+    padding: 10px 10px;
+    margin-left: 110px;
+  }
+}
 
 /* ===== STATE STYLES ======= */
